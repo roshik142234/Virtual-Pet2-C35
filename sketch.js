@@ -10,8 +10,8 @@ var Lastfeed
 function preload()
 
 {
-  dogimg1 = loadImage("images/dogImg.png")
-  dogimg2 = loadImage("images/dogImg1.png")
+  dogimg1 = loadImage("dogImg.png")
+  dogimg2 = loadImage("dogImg1.png")
 }
 
 function setup() {
@@ -85,3 +85,4 @@ foodobject.updateFoodStock(foodobject.getFoodStock()-1)
    FeedTime:hour ()
  })
 }
+
