@@ -19,7 +19,7 @@ function setup() {
   database = firebase.database();
   console.log(database);
  
-  foodobject=new Food()
+  foodobject = new Food()
   dog = createSprite(550,250,10,10);
   dog.addImage(dogimg1)
   dog.scale=0.2
@@ -53,7 +53,7 @@ function readPosition(data){
 }
 
 function showError(){
-  console.log("Error in writing to the database");
+  console.log("Error");
 }
 
 function writePosition(i){
@@ -70,6 +70,7 @@ function writePosition(i){
 }
 function AddFood(){
 position++
+
 database.ref('/').update({
   Food:position
 }
@@ -85,4 +86,5 @@ foodobject.updateFoodStock(foodobject.getFoodStock()-1)
    FeedTime:hour ()
  })
 }
+
 
